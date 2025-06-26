@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CarRent - Sewa Mobil</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f2f2f2;
+      color: #333;
+    }
+
+    header {
+      background: #004aad;
+      color: white;
+      padding: 1em 2em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 1em;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: #007bff;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .hero h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+    }
+
+    .section {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2em;
+    }
+
+    .cars {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .car-card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .car-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+
+    .car-card h3 {
+      margin-bottom: 8px;
+    }
+
+    .car-card p {
+      font-size: 14px;
+      margin: 6px 0;
+    }
+
+    .car-card .price {
+      font-weight: bold;
+      color: #007bff;
+    }
+
+    .car-card button {
+      background: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      margin-top: 10px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    .car-card button:hover {
+      background: #005bb5;
+    }
+
+    .contact-form {
+      max-width: 500px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .contact-form button {
+      width: 100%;
+      background: #004aad;
+      color: white;
+      border: none;
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .contact-form button:hover {
+      background: #003580;
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div><strong>CarRent</strong></div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#cars">Cars</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Sewa Mobil Impian Anda</h1>
+    <p>Harga terjangkau, proses mudah, pilihan lengkap.</p>
+  </section>
+
+  <section class="section" id="cars">
+    <h2>Daftar Mobil</h2>
+    <div class="cars">
+      <div class="car-card">
+        <img
+          src="https://static.wixstatic.com/media/261cbb_4db5f2aa5db740bbb86b14b986fc12dc~mv2.png/v1/fill/w_560,h_336,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/261cbb_4db5f2aa5db740bbb86b14b986fc12dc~mv2.png"
+          alt="Toyota Camry">
+
+        <h3>Toyota Camry</h3>
+        <p>Transmisi otomatis, AC, Tahun 2021</p>
+        <p class="price">Rp 650.000 / hari</p>
+        <button>Sewa Sekarang</button>
+      </div>
+      <div class="car-card">
+        <img src="https://hondafatmawati.co.id/wp-content/uploads/2023/08/CR-V-Grey.png" alt="CRV">
+        <h3>Honda CR-V</h3>
+        <p>AWD, Tahun 2022, Sunroof</p>
+        <p class="price">Rp 800.000 / hari</p>
+        <button>Sewa Sekarang</button>
+      </div>
+      <div class="car-card">
+        <img
+          src="https://imgd.aeplcdn.com/1920x1080/n/cw/ec/178535/c-class-exterior-right-front-three-quarter.jpeg?isig=0&q=80&q=80"
+          alt="Mercedes">
+        <h3>Mercedes C-Class</h3>
+        <p>Interior mewah, Tahun 2023</p>
+        <p class="price">Rp 1.500.000 / hari</p>
+        <button>Sewa Sekarang</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Hubungi Kami</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Nama Anda" required>
+      <input type="email" placeholder="Email Anda" required>
+      <textarea rows="4" placeholder="Pesan Anda..."></textarea>
+      <button type="submit">Kirim</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 CarRent - Semua Hak Dilindungi
+  </footer>
+
+</body>
+
+</html>
